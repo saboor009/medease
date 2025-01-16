@@ -1,0 +1,362 @@
+/* Container */
+.appointments-container {
+    padding: 20px;
+    background-color: #EAEAEA;
+
+    min-height: 100vh; 
+
+}
+
+/* Header */
+.appointments-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.appointments-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Section */
+.appointments-section {
+    padding: 20px;
+    border-radius: 15px;
+    margin-left: 90px;
+    margin-right: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.appointments-subtitle {
+    width: 100%;
+    padding-left: 100px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Appointment Card */
+.appointment-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-left: 40px;
+    background-color: #fefefe;
+    border: 1px solid #e0e0e0;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    width: 80%;
+}
+
+.appointment-details {
+    flex: 1;
+}
+
+.detail-item {
+    margin-bottom: 15px;
+}
+
+.detail-label {
+    display: block;
+    font-weight: bold;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.detail-value {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Status Badge */
+.status-badge {
+    padding: 5px 10px;
+    background-color: #ffeded;
+    color: #d9534f;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Buttons */
+.button-group {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.add-calendar-button {
+
+    padding: 10px 20px;
+    background-color: #49ADCA;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 50%;
+    height: 50px;
+    justify-content: center;
+
+}
+
+.cancel-button {
+    padding: 10px 20px;
+    background-color: #d9534f;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 50%;
+    height: 50px;
+}
+
+/* Doctor Profile Image */
+.doctor-profile-1 {
+    flex-shrink: 0;
+    background-color: #5db6ce9b;
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.doctor-image-1{
+    width: 220px;
+    height: 380px;
+    background-color: none;
+    border-radius: 40px;
+}
+
+.calender-icon{
+    width: 24px;
+    height: 24px;
+}
+
+/* Toggle */
+.toggle-container {
+    cursor: pointer;
+    width: 120px;
+}
+
+.toggle-text {
+    background-color: transparent;
+    border: 2px solid #d9d9d9; /* Light grey border */
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 119px;
+}
+
+.toggle-text.upcoming {
+    color: white;
+    background-color: #49ADCA;
+}
+
+.toggle-text.past {
+    color: white;
+    background-color: black;
+}
+
+.view-details-button {
+    padding: 10px 20px;
+    background-color: #4ba3c7;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 50%;
+    height: 50px;
+}
+
+.no-appointments-message {
+    text-align: center;
+    color: #999;
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+  
+
+
+/* Media Queries for Mobile */
+@media screen and (max-width: 768px) {
+    .appointments-header {
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .appointments-title {
+        font-size: 20px;
+    }
+
+    /* Appointment Card */
+    .appointment-card {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        width: 100%;
+    }
+
+    /* Doctor Profile */
+    .doctor-profile-1 {
+        width: 100%;
+        height: 200px;
+        margin-top: 15px;
+    
+        display: flex;
+       
+        justify-content: center;
+    }
+
+    .doctor-image-1 {
+        width: 80%;
+        height: 100%;
+        border-radius: 10px;
+  
+    }
+    .doctor-image-2{
+        width: 40%;
+    }
+
+    /* Buttons */
+    .add-calendar-button,
+    .cancel-button {
+        width: 100%;
+        height: 50px;
+    }
+
+    .toggle-container {
+        width: 100%;
+    }
+
+    .toggle-text {
+        width: 100%;
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .appointments-container {
+        padding: 20px;
+        background-color: #EAEAEA;
+
+        display: flex;
+        flex-direction: column;
+        
+     
+    }
+    
+.toggle-container{
+    width: 290px;
+}
+.appointments-subtitle{
+
+    width: 380px;
+   
+}
+
+    .appointments-header {
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+  
+    }
+
+    .appointments-title {
+        font-size: 20px;
+       
+    }
+   
+    /* Appointment Card */
+    .appointment-card {
+        padding: 20px;
+        width: 300px;
+    }
+
+    .doctor-profile {
+        width: 70%;
+        height: 180px;
+    }
+
+    .doctor-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Buttons */
+    .add-calendar-button,
+    .cancel-button {
+        width: 100%;
+        height: 45px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Responsive Design for Mobile Screens */
+@media (max-width: 768px) {
+    .appointment-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .doctor-profile-1 {
+        order: -1;
+        margin-bottom: 15px;
+    }
+
+    .appointment-details {
+        margin-left: 0;
+    }
+
+    .toggle-text {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .appointments-title {
+        font-size: 20px;
+    }
+    .view-details-button,.add-calendar-button{
+        width: 100%;
+
+    }
+
+}
