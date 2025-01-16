@@ -183,13 +183,12 @@ textarea:focus {
 
     .chat-history {
         max-width: 90%; 
-        height: 440px;
+        height: 300px;
        
     }
 
     .chat-input {
    
-      
         max-width: 90%;
         margin-bottom: 20px; /* Adjust width for smaller screens */
     }
