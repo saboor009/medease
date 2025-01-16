@@ -153,7 +153,7 @@ textarea:focus {
     }
 
     .chat-input {
-     
+      
         max-width: 95%;
         margin-bottom: 20px; /* Adjust width for smaller screens */
     }
@@ -182,9 +182,9 @@ textarea:focus {
     }
 
     .chat-history {
-
-        max-width: 90%; /* Adjust max width for smaller screens */
-        max-width: 90%; /* Adjust max width for smaller screens */
+        max-width: 90%; 
+        height: 600px;
+       
     }
 
     .chat-input {
